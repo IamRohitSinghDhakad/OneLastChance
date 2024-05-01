@@ -9,11 +9,36 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    @IBAction func btnOnShowHidePassword(_ sender: Any) {
     }
     
-
+    @IBAction func btnOnLogin(_ sender: Any) {
+        self.setRootController()
+    }
+    
+    
+    @IBAction func btnOnForGotPasswords(_ sender: Any) {
+        pushVc(viewConterlerId: "ForgotPasswordViewController")
+    }
+    
+    @IBAction func btnOnSignUp(_ sender: Any) {
+        pushVc(viewConterlerId: "SignUpViewController")
+    }
+    
+    
+    func setRootController(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let vc = (self.mainStoryboard.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController)!
+        let navController = UINavigationController(rootViewController: vc)
+        navController.isNavigationBarHidden = true
+        appDelegate.window?.rootViewController = navController
+    }
 }

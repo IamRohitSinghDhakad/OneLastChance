@@ -9,21 +9,34 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var tfFullName: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPhoneNumber: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfConfirmPassword: UITextField!
+    @IBOutlet weak var tfReferalCodeOptional: UITextField!
+    @IBOutlet weak var lblTermsAndCondition: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnOnAcceptTermsAndCondition(_ sender: Any) {
+        
     }
-    */
-
+    
+    @IBAction func btnOnSignUp(_ sender: Any) {
+        
+    }
+    
+    @IBAction func btnOnLogin(_ sender: Any) {
+        onBackPressed()
+    }
+    @IBAction func btnOnShowHidePassword(_ sender: Any) {
+    }
+    @IBAction func btnOnShowHideConfirmPassword(_ sender: Any) {
+    }
 }

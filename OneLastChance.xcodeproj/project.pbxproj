@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0781912BE2B53B00962EEC /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781902BE2B53B00962EEC /* ForgotPasswordViewController.swift */; };
+		0A0781952BE2BCD400962EEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781942BE2BCD400962EEC /* HomeViewController.swift */; };
+		0A0781982BE2BCFB00962EEC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781972BE2BCFB00962EEC /* HistoryViewController.swift */; };
+		0A07819C2BE2BD1100962EEC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819B2BE2BD1100962EEC /* ChatViewController.swift */; };
+		0A07819E2BE2BD1800962EEC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */; };
+		0A0781A02BE2BE0900962EEC /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */; };
+		0A0781A22BE2BFB100962EEC /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781A12BE2BFB100962EEC /* FilterViewController.swift */; };
 		920BAD8D1D811400BC099AF6 /* Pods_OneLastChance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */; };
 		F96BAF072BE2A40E0012E02B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BAF062BE2A40E0012E02B /* SignUpViewController.swift */; };
 		F9F48A0C2BE25D2C003A16E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F48A0B2BE25D2C003A16E1 /* AppDelegate.swift */; };
@@ -50,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0781902BE2B53B00962EEC /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		0A0781942BE2BCD400962EEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A0781972BE2BCFB00962EEC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0A07819B2BE2BD1100962EEC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		0A0781A12BE2BFB100962EEC /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		13954C4757E1968035F49B92 /* Pods-OneLastChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.release.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.release.xcconfig"; sourceTree = "<group>"; };
 		4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneLastChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4938FDE64E32A29A90DC1D7 /* Pods-OneLastChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.debug.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +122,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0781922BE2BCC100962EEC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0A0781932BE2BCCA00962EEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A0781942BE2BCD400962EEC /* HomeViewController.swift */,
+				0A0781A12BE2BFB100962EEC /* FilterViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A0781962BE2BCF000962EEC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0A0781972BE2BCFB00962EEC /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		0A0781992BE2BD0200962EEC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0A07819B2BE2BD1100962EEC /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0A07819A2BE2BD0700962EEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		28F575CE8D40D64B337E48EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +201,11 @@
 		F9F48A0A2BE25D2C003A16E1 /* OneLastChance */ = {
 			isa = PBXGroup;
 			children = (
+				0A07819A2BE2BD0700962EEC /* Profile */,
+				0A0781992BE2BD0200962EEC /* Chat */,
+				0A0781962BE2BCF000962EEC /* History */,
+				0A0781932BE2BCCA00962EEC /* Home */,
+				0A0781922BE2BCC100962EEC /* TabBar */,
 				F9F48A862BE26968003A16E1 /* Auth */,
 				F9F48A472BE268FE003A16E1 /* LocationPicker */,
 				F9F48A652BE268FE003A16E1 /* Model */,
@@ -250,6 +310,7 @@
 			children = (
 				F9F48A872BE269A7003A16E1 /* LoginViewController.swift */,
 				F96BAF062BE2A40E0012E02B /* SignUpViewController.swift */,
+				0A0781902BE2B53B00962EEC /* ForgotPasswordViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -372,12 +433,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F48A842BE268FE003A16E1 /* StoreModel.swift in Sources */,
+				0A0781912BE2B53B00962EEC /* ForgotPasswordViewController.swift in Sources */,
 				F9F48A6C2BE268FE003A16E1 /* SearchHistoryManager.swift in Sources */,
 				F9F48A812BE268FE003A16E1 /* LoginModel.swift in Sources */,
 				F9F48A6B2BE268FE003A16E1 /* LocationService.swift in Sources */,
 				F9F48A802BE268FE003A16E1 /* HomeModel.swift in Sources */,
 				F9F48A6A2BE268FE003A16E1 /* LocationSearchResultsViewController.swift in Sources */,
 				F9F48A732BE268FE003A16E1 /* CustomUIView.swift in Sources */,
+				0A0781A02BE2BE0900962EEC /* TabbarViewController.swift in Sources */,
+				0A0781982BE2BCFB00962EEC /* HistoryViewController.swift in Sources */,
 				F9F48A7D2BE268FE003A16E1 /* ChatDetailModel.swift in Sources */,
 				F9F48A662BE268FE003A16E1 /* AppSharedData.swift in Sources */,
 				F9F48A722BE268FE003A16E1 /* CustomUITextField.swift in Sources */,
@@ -385,6 +449,7 @@
 				F9F48A7F2BE268FE003A16E1 /* GetGameModel.swift in Sources */,
 				F9F48A6D2BE268FE003A16E1 /* TabBarViewController.swift in Sources */,
 				F9F48A7A2BE268FE003A16E1 /* WebServiceHelper.swift in Sources */,
+				0A0781A22BE2BFB100962EEC /* FilterViewController.swift in Sources */,
 				F9F48A7B2BE268FE003A16E1 /* WebServiceManager.swift in Sources */,
 				F9F48A832BE268FE003A16E1 /* RegistrationModel.swift in Sources */,
 				F9F48A102BE25D2C003A16E1 /* ViewController.swift in Sources */,
@@ -393,16 +458,19 @@
 				F9F48A6F2BE268FE003A16E1 /* AlertViewController.swift in Sources */,
 				F9F48A752BE268FE003A16E1 /* MediaPicker.swift in Sources */,
 				F9F48A882BE269A7003A16E1 /* LoginViewController.swift in Sources */,
+				0A0781952BE2BCD400962EEC /* HomeViewController.swift in Sources */,
 				F96BAF072BE2A40E0012E02B /* SignUpViewController.swift in Sources */,
 				F9F48A742BE268FE003A16E1 /* Extensions.swift in Sources */,
 				F9F48A692BE268FE003A16E1 /* LocationPickerViewController.swift in Sources */,
 				F9F48A772BE268FE003A16E1 /* RDTextView.swift in Sources */,
 				F9F48A782BE268FE003A16E1 /* TableViewExtension.swift in Sources */,
+				0A07819C2BE2BD1100962EEC /* ChatViewController.swift in Sources */,
 				F9F48A762BE268FE003A16E1 /* MessageConstant.swift in Sources */,
 				F9F48A852BE268FE003A16E1 /* UserModel.swift in Sources */,
 				F9F48A6E2BE268FE003A16E1 /* FloatRatingView.swift in Sources */,
 				F9F48A7E2BE268FE003A16E1 /* GamePlayersModel.swift in Sources */,
 				F9F48A0C2BE25D2C003A16E1 /* AppDelegate.swift in Sources */,
+				0A07819E2BE2BD1800962EEC /* ProfileViewController.swift in Sources */,
 				F9F48A792BE268FE003A16E1 /* TimePickerManager.swift in Sources */,
 				F9F48A712BE268FE003A16E1 /* CircularProgressBar.swift in Sources */,
 			);
