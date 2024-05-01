@@ -1,0 +1,6 @@
+framework module Pods_OneLastChance {
+  umbrella header "Pods-OneLastChance-umbrella.h"
+
+  export *
+  module * { export * }
+}
