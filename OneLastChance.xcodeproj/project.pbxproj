@@ -14,6 +14,10 @@
 		0A07819E2BE2BD1800962EEC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */; };
 		0A0781A02BE2BE0900962EEC /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */; };
 		0A0781A22BE2BFB100962EEC /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781A12BE2BFB100962EEC /* FilterViewController.swift */; };
+		0AFFCF862BE362140039AD4F /* DietryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFCF852BE362140039AD4F /* DietryTableViewCell.xib */; };
+		0AFFCF872BE362140039AD4F /* DietryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFCF842BE362140039AD4F /* DietryTableViewCell.swift */; };
+		0AFFCF8A2BE362250039AD4F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFCF892BE362250039AD4F /* HomeTableViewCell.xib */; };
+		0AFFCF8B2BE362250039AD4F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFCF882BE362250039AD4F /* HomeTableViewCell.swift */; };
 		920BAD8D1D811400BC099AF6 /* Pods_OneLastChance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */; };
 		F96BAF072BE2A40E0012E02B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BAF062BE2A40E0012E02B /* SignUpViewController.swift */; };
 		F9F48A0C2BE25D2C003A16E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F48A0B2BE25D2C003A16E1 /* AppDelegate.swift */; };
@@ -64,6 +68,10 @@
 		0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		0A0781A12BE2BFB100962EEC /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		0AFFCF842BE362140039AD4F /* DietryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietryTableViewCell.swift; sourceTree = "<group>"; };
+		0AFFCF852BE362140039AD4F /* DietryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DietryTableViewCell.xib; sourceTree = "<group>"; };
+		0AFFCF882BE362250039AD4F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		0AFFCF892BE362250039AD4F /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		13954C4757E1968035F49B92 /* Pods-OneLastChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.release.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.release.xcconfig"; sourceTree = "<group>"; };
 		4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneLastChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4938FDE64E32A29A90DC1D7 /* Pods-OneLastChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.debug.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +143,10 @@
 			children = (
 				0A0781942BE2BCD400962EEC /* HomeViewController.swift */,
 				0A0781A12BE2BFB100962EEC /* FilterViewController.swift */,
+				0AFFCF882BE362250039AD4F /* HomeTableViewCell.swift */,
+				0AFFCF892BE362250039AD4F /* HomeTableViewCell.xib */,
+				0AFFCF842BE362140039AD4F /* DietryTableViewCell.swift */,
+				0AFFCF852BE362140039AD4F /* DietryTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,6 +387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFFCF862BE362140039AD4F /* DietryTableViewCell.xib in Resources */,
+				0AFFCF8A2BE362250039AD4F /* HomeTableViewCell.xib in Resources */,
 				F9F48A152BE25D2F003A16E1 /* Assets.xcassets in Resources */,
 				F9F48A182BE25D2F003A16E1 /* Base in Resources */,
 				F9F48A132BE25D2C003A16E1 /* Base in Resources */,
@@ -444,6 +458,7 @@
 				0A0781982BE2BCFB00962EEC /* HistoryViewController.swift in Sources */,
 				F9F48A7D2BE268FE003A16E1 /* ChatDetailModel.swift in Sources */,
 				F9F48A662BE268FE003A16E1 /* AppSharedData.swift in Sources */,
+				0AFFCF872BE362140039AD4F /* DietryTableViewCell.swift in Sources */,
 				F9F48A722BE268FE003A16E1 /* CustomUITextField.swift in Sources */,
 				F9F48A7C2BE268FE003A16E1 /* CategoryModel.swift in Sources */,
 				F9F48A7F2BE268FE003A16E1 /* GetGameModel.swift in Sources */,
@@ -459,6 +474,7 @@
 				F9F48A752BE268FE003A16E1 /* MediaPicker.swift in Sources */,
 				F9F48A882BE269A7003A16E1 /* LoginViewController.swift in Sources */,
 				0A0781952BE2BCD400962EEC /* HomeViewController.swift in Sources */,
+				0AFFCF8B2BE362250039AD4F /* HomeTableViewCell.swift in Sources */,
 				F96BAF072BE2A40E0012E02B /* SignUpViewController.swift in Sources */,
 				F9F48A742BE268FE003A16E1 /* Extensions.swift in Sources */,
 				F9F48A692BE268FE003A16E1 /* LocationPickerViewController.swift in Sources */,
