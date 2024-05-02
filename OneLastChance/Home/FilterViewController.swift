@@ -22,9 +22,16 @@ class FilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Add value changed event for the slider
+        seekBarDistance.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
 
         let nib = UINib(nibName: "DietryTableViewCell", bundle: nil)
         self.tblVw.register(nib, forCellReuseIdentifier: "DietryTableViewCell")
+        
+    }
+    
+    @objc func sliderValueChanged(_ sender: UISlider) {
+        lblDistanceKmValue.text = "\(Int(sender.value)) Km" // Update label text with slider value
     }
     
 

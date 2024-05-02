@@ -2239,14 +2239,11 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="R5J-Wa-cff">
-            <size key="intrinsicContentSize" width="33" height="19"/>
-        </designable>
         <designable name="cha-oF-Lla">
             <size key="intrinsicContentSize" width="59.666666666666664" height="18.666666666666668"/>
         </designable>
-        <designable name="lLB-W2-hv5">
-            <size key="intrinsicContentSize" width="15.666666666666666" height="19"/>
+        <designable name="l9Z-qh-BUT">
+            <size key="intrinsicContentSize" width="59.333333333333336" height="18.666666666666668"/>
         </designable>
     </designables>
     <resources>
