@@ -1,20 +1,20 @@
 //
-//  HomeTableViewCell.swift
+//  ChatTableViewCell.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh on 02/05/24.
+//  Created by Dhakad, Rohit Singh  on 08/05/24.
 //
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+class ChatTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgVw: UIImageView!
-    @IBOutlet weak var vwBg: UIView!
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblDesc: UILabel!
-    @IBOutlet weak var lblDistance: UILabel!
-    @IBOutlet weak var lblRating: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblTimeAgo: UILabel!
+    @IBOutlet weak var lblLastMsg: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

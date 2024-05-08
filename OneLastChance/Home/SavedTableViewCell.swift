@@ -1,13 +1,13 @@
 //
-//  DietryTableViewCell.swift
+//  SavedTableViewCell.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh  on 02/05/24.
+//  Created by Dhakad, Rohit Singh on 08/05/24.
 //
 
 import UIKit
 
-class DietryTableViewCell: UITableViewCell {
+class SavedTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

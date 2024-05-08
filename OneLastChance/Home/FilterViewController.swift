@@ -2,7 +2,7 @@
 //  FilterViewController.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh (Cognizant) on 01/05/24.
+//  Created by Dhakad, Rohit Singh  on 01/05/24.
 //
 
 import UIKit
@@ -31,14 +31,16 @@ class FilterViewController: UIViewController {
     }
     
     @objc func sliderValueChanged(_ sender: UISlider) {
-        lblDistanceKmValue.text = "\(Int(sender.value)) Km" // Update label text with slider value
+        lblDistanceKmValue.text = "(Distance \(Int(sender.value))Km)" // Update label text with slider value
     }
     
 
     @IBAction func btnOnBack(_ sender: Any) {
         onBackPressed()
     }
+    
     @IBAction func btnSubmit(_ sender: Any) {
+        
     }
     
 }

@@ -1,15 +1,16 @@
 //
-//  ForgotPasswordViewController.swift
+//  PrivacyPolicyViewController.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh  on 01/05/24.
+//  Created by Dhakad, Rohit Singh on 08/05/24.
 //
 
 import UIKit
+import WebKit
 
-class ForgotPasswordViewController: UIViewController {
-
-    @IBOutlet weak var tfEmail: UITextField!
+class PrivacyPolicyViewController: UIViewController {
+    
+    @IBOutlet weak var webVw: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +18,9 @@ class ForgotPasswordViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func btnOnSend(_ sender: Any) {
-    }
-    
     @IBAction func btnOnBack(_ sender: Any) {
         onBackPressed()
     }
+    
 
 }

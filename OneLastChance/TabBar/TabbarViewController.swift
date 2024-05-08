@@ -2,7 +2,7 @@
 //  TabbarViewController.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh (Cognizant) on 01/05/24.
+//  Created by Dhakad, Rohit Singh on 01/05/24.
 //
 
 import UIKit

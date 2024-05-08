@@ -2,28 +2,40 @@
 //  ChatViewController.swift
 //  OneLastChance
 //
-//  Created by Dhakad, Rohit Singh (Cognizant) on 01/05/24.
+//  Created by Dhakad, Rohit Singh  on 01/05/24.
 //
 
 import UIKit
 
 class ChatViewController: UIViewController {
 
+    @IBOutlet weak var tblVw: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.tblVw.delegate = self
+        self.tblVw.dataSource = self
+        let nib = UINib(nibName: "ChatTableViewCell", bundle: nil)
+        self.tblVw.register(nib, forCellReuseIdentifier: "ChatTableViewCell")
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ChatViewController : UITableViewDelegate,UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
-    */
-
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tblVw.dequeueReusableCell(withIdentifier: "ChatTableViewCell")as! ChatTableViewCell
+        
+        return cell
+    }
+    
 }
