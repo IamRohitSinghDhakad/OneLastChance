@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MapKit
+
 
 class YourOrderViewController: UIViewController {
 
@@ -36,6 +38,14 @@ class YourOrderViewController: UIViewController {
     }
     
     @IBAction func btnOnMap(_ sender: Any) {
+        let destinationCoordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194) // Replace with your destination coordinates
         
+        let currentLocation = MKMapItem.forCurrentLocation()
+        let destinationPlacemark = MKPlacemark(coordinate: destinationCoordinate)
+        let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
+        
+        let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving] // Specify the navigation mode
+        
+        MKMapItem.openMaps(with: [currentLocation, destinationMapItem], launchOptions: options)
     }
 }

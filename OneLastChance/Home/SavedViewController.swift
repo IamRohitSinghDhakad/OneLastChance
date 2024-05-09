@@ -10,6 +10,7 @@ import UIKit
 class SavedViewController: UIViewController {
 
     @IBOutlet weak var tblVw: UITableView!
+    @IBOutlet weak var vwNotFound: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,8 @@ class SavedViewController: UIViewController {
         let nib = UINib(nibName: "SavedTableViewCell", bundle: nil)
         self.tblVw.register(nib, forCellReuseIdentifier: "SavedTableViewCell")
         // Do any additional setup after loading the view.
+        
+        self.vwNotFound.isHidden = true
     }
     
     @IBAction func btnOnBack(_ sender: Any) {

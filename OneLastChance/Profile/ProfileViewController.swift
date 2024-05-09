@@ -47,6 +47,13 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func btnOnShareMyCode(_ sender: Any) {
+        let textToShare = "asd%^4ds" // Replace this with your string content
+        
+        let activityViewController = UIActivityViewController(activityItems: [textToShare], applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // For iPad compatibility
+        
+        // Present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
         
     }
 }

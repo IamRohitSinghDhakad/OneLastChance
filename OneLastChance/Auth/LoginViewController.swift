@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
 
     }
     @IBAction func btnOnShowHidePassword(_ sender: Any) {
+        self.tfPassword.isSecureTextEntry = !self.tfPassword.isSecureTextEntry
     }
     
     @IBAction func btnOnLogin(_ sender: Any) {

@@ -36,7 +36,9 @@ class SignUpViewController: UIViewController {
         onBackPressed()
     }
     @IBAction func btnOnShowHidePassword(_ sender: Any) {
+        self.tfPassword.isSecureTextEntry = !self.tfPassword.isSecureTextEntry
     }
     @IBAction func btnOnShowHideConfirmPassword(_ sender: Any) {
+        self.tfConfirmPassword.isSecureTextEntry = !self.tfConfirmPassword.isSecureTextEntry
     }
 }
