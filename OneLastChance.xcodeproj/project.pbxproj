@@ -12,7 +12,6 @@
 		0A0781982BE2BCFB00962EEC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781972BE2BCFB00962EEC /* HistoryViewController.swift */; };
 		0A07819C2BE2BD1100962EEC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819B2BE2BD1100962EEC /* ChatViewController.swift */; };
 		0A07819E2BE2BD1800962EEC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */; };
-		0A0781A02BE2BE0900962EEC /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */; };
 		0A0781A22BE2BFB100962EEC /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0781A12BE2BFB100962EEC /* FilterViewController.swift */; };
 		0A8D496A2BEB56A2005223FC /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D49692BEB56A2005223FC /* ResetPasswordViewController.swift */; };
 		0A8D496C2BEB57FD005223FC /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D496B2BEB57FD005223FC /* ContactUsViewController.swift */; };
@@ -81,7 +80,6 @@
 		0A0781972BE2BCFB00962EEC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0A07819B2BE2BD1100962EEC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0A07819D2BE2BD1800962EEC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		0A0781A12BE2BFB100962EEC /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		0A8D49692BEB56A2005223FC /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		0A8D496B2BEB57FD005223FC /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
@@ -160,14 +158,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A0781922BE2BCC100962EEC /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				0A07819F2BE2BE0900962EEC /* TabbarViewController.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		0A0781932BE2BCCA00962EEC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +252,6 @@
 				0A0781992BE2BD0200962EEC /* Chat */,
 				0A0781962BE2BCF000962EEC /* History */,
 				0A0781932BE2BCCA00962EEC /* Home */,
-				0A0781922BE2BCC100962EEC /* TabBar */,
 				F9F48A862BE26968003A16E1 /* Auth */,
 				F9F48A472BE268FE003A16E1 /* LocationPicker */,
 				F9F48A652BE268FE003A16E1 /* Model */,
@@ -507,7 +496,6 @@
 				F9F48A6A2BE268FE003A16E1 /* LocationSearchResultsViewController.swift in Sources */,
 				F9F48A732BE268FE003A16E1 /* CustomUIView.swift in Sources */,
 				0AF9F8E82BE4C68F00C6EE0F /* HistoryTableViewCell.swift in Sources */,
-				0A0781A02BE2BE0900962EEC /* TabbarViewController.swift in Sources */,
 				0A0781982BE2BCFB00962EEC /* HistoryViewController.swift in Sources */,
 				F9F48A7D2BE268FE003A16E1 /* ChatDetailModel.swift in Sources */,
 				F9F48A662BE268FE003A16E1 /* AppSharedData.swift in Sources */,
