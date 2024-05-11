@@ -41,6 +41,7 @@ class DetailViewController: UIViewController {
     @IBAction func btnOnShare(_ sender: Any) {
     }
     @IBAction func btnOnRatings(_ sender: Any) {
+        pushVc(viewConterlerId: "MyReviewViewController")
     }
 }
 

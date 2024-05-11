@@ -33,6 +33,9 @@
 		0AFFCF8A2BE362250039AD4F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFFCF892BE362250039AD4F /* HomeTableViewCell.xib */; };
 		0AFFCF8B2BE362250039AD4F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFCF882BE362250039AD4F /* HomeTableViewCell.swift */; };
 		920BAD8D1D811400BC099AF6 /* Pods_OneLastChance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */; };
+		F93238112BEE39270086EA50 /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932380E2BEE39260086EA50 /* MyReviewViewController.swift */; };
+		F93238122BEE39270086EA50 /* MyReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932380F2BEE39260086EA50 /* MyReviewTableViewCell.swift */; };
+		F93238132BEE39270086EA50 /* MyReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F93238102BEE39260086EA50 /* MyReviewTableViewCell.xib */; };
 		F96BAF072BE2A40E0012E02B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BAF062BE2A40E0012E02B /* SignUpViewController.swift */; };
 		F9F48A0C2BE25D2C003A16E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F48A0B2BE25D2C003A16E1 /* AppDelegate.swift */; };
 		F9F48A102BE25D2C003A16E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F48A0F2BE25D2C003A16E1 /* ViewController.swift */; };
@@ -103,6 +106,9 @@
 		13954C4757E1968035F49B92 /* Pods-OneLastChance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.release.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.release.xcconfig"; sourceTree = "<group>"; };
 		4A4E04F51AABA6247DFE4AD7 /* Pods_OneLastChance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneLastChance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4938FDE64E32A29A90DC1D7 /* Pods-OneLastChance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneLastChance.debug.xcconfig"; path = "Target Support Files/Pods-OneLastChance/Pods-OneLastChance.debug.xcconfig"; sourceTree = "<group>"; };
+		F932380E2BEE39260086EA50 /* MyReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
+		F932380F2BEE39260086EA50 /* MyReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReviewTableViewCell.swift; sourceTree = "<group>"; };
+		F93238102BEE39260086EA50 /* MyReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyReviewTableViewCell.xib; sourceTree = "<group>"; };
 		F96BAF062BE2A40E0012E02B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F9F48A082BE25D2C003A16E1 /* OneLastChance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneLastChance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F48A0B2BE25D2C003A16E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,9 @@
 		0A0781932BE2BCCA00962EEC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F932380F2BEE39260086EA50 /* MyReviewTableViewCell.swift */,
+				F93238102BEE39260086EA50 /* MyReviewTableViewCell.xib */,
+				F932380E2BEE39260086EA50 /* MyReviewViewController.swift */,
 				0A0781942BE2BCD400962EEC /* HomeViewController.swift */,
 				0A0781A12BE2BFB100962EEC /* FilterViewController.swift */,
 				0AFFCF882BE362250039AD4F /* HomeTableViewCell.swift */,
@@ -422,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFFCF862BE362140039AD4F /* DietryTableViewCell.xib in Resources */,
+				F93238132BEE39270086EA50 /* MyReviewTableViewCell.xib in Resources */,
 				0A8D49742BEB5E79005223FC /* SavedTableViewCell.xib in Resources */,
 				0A942E4B2BEA9C9600E9C418 /* DetailTableViewCell.xib in Resources */,
 				0AFFCF8A2BE362250039AD4F /* HomeTableViewCell.xib in Resources */,
@@ -491,6 +501,7 @@
 				F9F48A812BE268FE003A16E1 /* LoginModel.swift in Sources */,
 				F9F48A6B2BE268FE003A16E1 /* LocationService.swift in Sources */,
 				F9F48A802BE268FE003A16E1 /* HomeModel.swift in Sources */,
+				F93238112BEE39270086EA50 /* MyReviewViewController.swift in Sources */,
 				0A8D496A2BEB56A2005223FC /* ResetPasswordViewController.swift in Sources */,
 				0A8D496C2BEB57FD005223FC /* ContactUsViewController.swift in Sources */,
 				F9F48A6A2BE268FE003A16E1 /* LocationSearchResultsViewController.swift in Sources */,
@@ -515,6 +526,7 @@
 				F9F48A672BE268FE003A16E1 /* Location.swift in Sources */,
 				F9F48A6F2BE268FE003A16E1 /* AlertViewController.swift in Sources */,
 				F9F48A752BE268FE003A16E1 /* MediaPicker.swift in Sources */,
+				F93238122BEE39270086EA50 /* MyReviewTableViewCell.swift in Sources */,
 				0A942E4C2BEA9C9600E9C418 /* DetailTableViewCell.swift in Sources */,
 				F9F48A882BE269A7003A16E1 /* LoginViewController.swift in Sources */,
 				0A0781952BE2BCD400962EEC /* HomeViewController.swift in Sources */,
