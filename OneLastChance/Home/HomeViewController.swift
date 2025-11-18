@@ -29,6 +29,8 @@ class HomeViewController: UIViewController {
         self.tblVw.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
         self.vwNoRecordFound.isHidden = true
         
+        self.call_GetFoodList_Api()
+        
     }
     
     @IBAction func btnOnFilter(_ sender: Any) {
@@ -88,5 +90,69 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         pushVc(viewConterlerId: "DetailViewController")
     }
+}
+
+extension HomeViewController {
+    
+    func call_GetFoodList_Api(){
+        
+        if !objWebServiceManager.isNetworkAvailable(){
+            objWebServiceManager.hideIndicator()
+            objAlert.showAlert(message: "No Internet Connection", title: "Alert", controller: self)
+            return
+        }
+        
+        objWebServiceManager.showIndicator()
+        
+        let dicrParam = ["user_id":objAppShareData.UserDetail.strUserId!,
+                         "business_type":"",
+                         "my_favorite":"",
+                         "lat":"",
+                         "lng":"",
+                         "distance":"",
+                         "vendor_id":"",
+                         "category_id":"",
+                         "box_type_id":"",
+                         "range_from":"",
+                         "range_to":"",
+                         "dietary":""]as [String:Any]
+        
+        print(dicrParam)
+        
+        objWebServiceManager.requestPost(strURL: WsUrl.url_GetVendorList, queryParams: [:], params: dicrParam, strCustomValidation: "", showIndicator: false) { (response) in
+            objWebServiceManager.hideIndicator()
+            
+            let status = (response["status"] as? Int)
+            let message = (response["message"] as? String)
+            print(response)
+            
+            if status == MessageConstant.k_StatusCode{
+                if let user_details  = response["result"] as? [[String:Any]] {
+//                    self.arrCars.removeAll()
+//                    for data in user_details{
+//                        let obj = HomeModel.init(from: data)
+//                        self.arrCars.append(obj)
+//                    }
+//                    
+//                    self.tblVw.reloadData()
+                    
+                }
+            }else{
+                objWebServiceManager.hideIndicator()
+                if let msgg = response["result"]as? String{
+                  //  self.arrCars.removeAll()
+                    objAlert.showAlert(message: msgg, title: "", controller: self)
+                }else{
+                    objAlert.showAlert(message: message ?? "", title: "", controller: self)
+                }
+            }
+            
+            
+        } failure: { (Error) in
+            //  print(Error)
+            objWebServiceManager.hideIndicator()
+        }
+    }
+    
 }
 

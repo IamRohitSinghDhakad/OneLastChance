@@ -10,7 +10,7 @@ import UIKit
 
 
 
-let BASE_URL = "https://ambitious.in.net/Shubham/social-games/index.php/api/"//Local
+let BASE_URL = "https://1lastchance.app/admin/index.php/api/"//Local
 let imageBaseUrl = "https://gms.mursko-sredisce.hr/"
 
 
@@ -22,7 +22,7 @@ struct WsUrl{
     static let url_AnonymousLogin = BASE_URL + "anonymous_login"
     static let url_SocialLogin = BASE_URL + "social_login"
     static let url_ForgotPassword = BASE_URL + "forgot_password"
-    static let url_GetCategory = BASE_URL + "get_category"
+    static let url_GetVendorList = BASE_URL + "get_vendors"
     static let url_AddGame = BASE_URL + "add_game"
     static let url_GetGame = BASE_URL + "get_game"
     static let url_RequestJoineGame = BASE_URL + "request_to_join_game"

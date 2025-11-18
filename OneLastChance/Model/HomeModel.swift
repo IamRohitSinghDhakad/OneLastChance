@@ -7,136 +7,323 @@
 
 import UIKit
 
+import Foundation
+
 class HomeModel: NSObject {
     
-    var category_image : String?
-    var category_id : String?
-    var selected: String?
-    var category_name: String?
-    var datetime : String?
-    var strDescription : String?
-    var isLiked : String?
-    var strTitle : String?
-    var strToTime : String?
-    var image1 : String?
-    var image2 : String?
-    var image3 : String?
-    var image4 : String?
-    var image5 : String?
-    var strType : String?
-    var id : String?
-    var notification_id : String?
-    var strDuration : String?
-    
-    var eventFromTime : String?
-    var eventTotime : String?
-    var eventDate : String?
-    
-    
-    
+    var address: String
+    var bonusGiven: Int
+    var businessType: String
+    var city: String
+    var closeTime: String
+    var code: String
+    var country: String
+    var details: String
+    var dietary: [Dietary]
+    var dietaryId: Int
+    var distance: String
+    var email: String
+    var emailVerified: Int
+    var entryDate: String
+    var expiryDate: String
+    var lat: String
+    var liked: Int
+    var likes: Int
+    var lng: String
+    var membershipId: Int
+    var mobile: String
+    var mobileVerified: Int
+    var name: String
+    var openTime: String
+    var orderCount: Int
+    var otp: String
+    var password: String
+    var postCode: String
+    var rating: String
+    var referBy: String?
+    var registerId: String
+    var review: Int
+    var rewards: Int
+    var socialId: String
+    var socialType: String
+    var status: Int
+    var streetAddress: String
+    var type: String
+    var unitNumber: String
+    var userId: Int
+    var userImage: String
+
     init(from dictionary: [String: Any]) {
-        super.init()
-        
-        if let value = dictionary["category_id"] as? String {
-            category_id = value
-        }else if let value = dictionary["category_id"] as? Int {
-            category_id = "\(value)"
+        if let value = dictionary["address"] as? String {
+            address = value
+        } else {
+            address = ""
         }
         
-        if let value = dictionary["notification_id"] as? String {
-            notification_id = value
-        }else if let value = dictionary["notification_id"] as? Int {
-            notification_id = "\(value)"
+        if let value = dictionary["bonus_given"] as? Int {
+            bonusGiven = value
+        } else {
+            bonusGiven = 0
         }
         
-        if let value = dictionary["id"] as? String {
-            id = value
-        }else if let value = dictionary["id"] as? Int {
-            id = "\(value)"
+        if let value = dictionary["business_type"] as? String {
+            businessType = value
+        } else {
+            businessType = ""
         }
         
-        if let value = dictionary["category_image"] as? String {
-            category_image = value
+        if let value = dictionary["city"] as? String {
+            city = value
+        } else {
+            city = ""
         }
         
-        if let value = dictionary["duration"] as? String {
-            strDuration = value
+        if let value = dictionary["close_time"] as? String {
+            closeTime = value
+        } else {
+            closeTime = ""
         }
         
-        if let value = dictionary["category_name"] as? String {
-            category_name = value
+        if let value = dictionary["code"] as? String {
+            code = value
+        } else {
+            code = ""
         }
         
-        if let value = dictionary["selected"] as? String {
-            selected = value
-        }else if let value = dictionary["selected"] as? Int {
-            selected = "\(value)"
+        if let value = dictionary["country"] as? String {
+            country = value
+        } else {
+            country = ""
         }
         
-        if let value = dictionary["datetime"] as? String {
-            datetime = value
+        if let value = dictionary["details"] as? String {
+            details = value
+        } else {
+            details = ""
         }
         
-        if let value = dictionary["type"] as? String {
-            strType = value
+        if let dietaryArray = dictionary["dietary"] as? [[String: Any]] {
+            dietary = dietaryArray.map { Dietary(from: $0) }
+        } else {
+            dietary = []
         }
         
-        if let value = dictionary["to_time"] as? String {
-            strToTime = value
+        if let value = dictionary["dietary_id"] as? Int {
+            dietaryId = value
+        } else {
+            dietaryId = 0
         }
         
-        if let value = dictionary["description"] as? String {
-            strDescription = value
+        if let value = dictionary["distance"] as? String {
+            distance = value
+        } else {
+            distance = ""
         }
         
-        if let value = dictionary["isLiked"] as? String {
-            isLiked = value
-        }else if let value = dictionary["isLiked"] as? Int {
-            isLiked = "\(value)"
+        if let value = dictionary["email"] as? String {
+            email = value
+        } else {
+            email = ""
         }
         
-        if let value = dictionary["title"] as? String {
-            strTitle = value
-        }
-        
-        if let value = dictionary["image1"] as? String {
-            image1 = value
-        }
-        
-        if let value = dictionary["image2"] as? String {
-            image2 = value
-        }
-        
-        if let value = dictionary["image3"] as? String {
-            image3 = value
-        }
-        
-        if let value = dictionary["image4"] as? String {
-            image4 = value
-        }
-        
-        if let value = dictionary["image5"] as? String {
-            image5 = value
-        }
-        
-        
-        //============ EVENT ============//
-        
-        if let value = dictionary["from_time"] as? String {
-            eventFromTime = value
-        }
-        
-        if let value = dictionary["to_time"] as? String {
-            eventTotime = value
+        if let value = dictionary["email_verified"] as? Int {
+            emailVerified = value
+        } else {
+            emailVerified = 0
         }
         
         if let value = dictionary["entrydt"] as? String {
-            eventDate = value
+            entryDate = value
+        } else {
+            entryDate = ""
         }
         
-        //============== XXX ===============//
+        if let value = dictionary["expiry_date"] as? String {
+            expiryDate = value
+        } else {
+            expiryDate = ""
+        }
         
+        if let value = dictionary["lat"] as? String {
+            lat = value
+        } else {
+            lat = ""
+        }
         
+        if let value = dictionary["liked"] as? Int {
+            liked = value
+        } else {
+            liked = 0
+        }
+        
+        if let value = dictionary["likes"] as? Int {
+            likes = value
+        } else {
+            likes = 0
+        }
+        
+        if let value = dictionary["lng"] as? String {
+            lng = value
+        } else {
+            lng = ""
+        }
+        
+        if let value = dictionary["membership_id"] as? Int {
+            membershipId = value
+        } else {
+            membershipId = 0
+        }
+        
+        if let value = dictionary["mobile"] as? String {
+            mobile = value
+        } else {
+            mobile = ""
+        }
+        
+        if let value = dictionary["mobile_verified"] as? Int {
+            mobileVerified = value
+        } else {
+            mobileVerified = 0
+        }
+        
+        if let value = dictionary["name"] as? String {
+            name = value
+        } else {
+            name = ""
+        }
+        
+        if let value = dictionary["open_time"] as? String {
+            openTime = value
+        } else {
+            openTime = ""
+        }
+        
+        if let value = dictionary["order_count"] as? Int {
+            orderCount = value
+        } else {
+            orderCount = 0
+        }
+        
+        if let value = dictionary["otp"] as? String {
+            otp = value
+        } else {
+            otp = ""
+        }
+        
+        if let value = dictionary["password"] as? String {
+            password = value
+        } else {
+            password = ""
+        }
+        
+        if let value = dictionary["post_code"] as? String {
+            postCode = value
+        } else {
+            postCode = ""
+        }
+        
+        if let value = dictionary["rating"] as? String {
+            rating = value
+        } else {
+            rating = ""
+        }
+        
+        if let value = dictionary["refer_by"] as? String {
+            referBy = value
+        } else {
+            referBy = nil
+        }
+        
+        if let value = dictionary["register_id"] as? String {
+            registerId = value
+        } else {
+            registerId = ""
+        }
+        
+        if let value = dictionary["review"] as? Int {
+            review = value
+        } else {
+            review = 0
+        }
+        
+        if let value = dictionary["rewards"] as? Int {
+            rewards = value
+        } else {
+            rewards = 0
+        }
+        
+        if let value = dictionary["social_id"] as? String {
+            socialId = value
+        } else {
+            socialId = ""
+        }
+        
+        if let value = dictionary["social_type"] as? String {
+            socialType = value
+        } else {
+            socialType = ""
+        }
+        
+        if let value = dictionary["status"] as? Int {
+            status = value
+        } else {
+            status = 0
+        }
+        
+        if let value = dictionary["street_address"] as? String {
+            streetAddress = value
+        } else {
+            streetAddress = ""
+        }
+        
+        if let value = dictionary["type"] as? String {
+            type = value
+        } else {
+            type = ""
+        }
+        
+        if let value = dictionary["unit_number"] as? String {
+            unitNumber = value
+        } else {
+            unitNumber = ""
+        }
+        
+        if let value = dictionary["user_id"] as? Int {
+            userId = value
+        } else {
+            userId = 0
+        }
+        
+        if let value = dictionary["user_image"] as? String {
+            userImage = value
+        } else {
+            userImage = ""
+        }
     }
+}
+
+class Dietary: NSObject {
+    var dietaryId: Int
+    var dietaryImage: String
+    var dietaryName: String
     
+    init(from dictionary: [String: Any]) {
+        if let value = dictionary["dietary_id"] as? Int {
+            dietaryId = value
+        } else {
+            dietaryId = 0
+        }
+        
+        if let value = dictionary["dietary_image"] as? String {
+            dietaryImage = value
+        } else {
+            dietaryImage = ""
+        }
+        
+        if let value = dictionary["dietary_name"] as? String {
+            dietaryName = value
+        } else {
+            dietaryName = ""
+        }
+    }
 }
